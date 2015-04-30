@@ -1,0 +1,34 @@
+[ req ]
+default_bits		= 1024		#ukuran key
+default_keyfile		= key.pem	#nama dari generate key
+default_md		= md5		#algoritma digest untuk pesan
+string_mask		= nombstr	#permitted character
+distinguished_name	= req_distinguished_name
+req_extensions		= v3_req
+
+[ req_distinguished_name ]
+0.organizationName	= kij
+organizationalUnitName	= kelompok
+emailAddress		= penitasari93@gmail.com
+emailAddress_max	= 40
+localityName		= Surabaya
+stateOrProvinceName	= Jatim
+countryName		= US
+countryName_min		= 2
+countryName_max		= 2
+commonName		= 10.151.32.220
+commonName_max		= 64
+
+0.organizationName_default	= Teknik Informatika
+localityName_default		= Metropolis
+stateOrProvincename_default	= New York
+countryName_default		= US
+
+[ v3_ca ]
+basicConstraints	= CA:TRUE
+subjectKeyIdentifier	= hash
+authorityKeyIdentifier  = keyid:always,issuer:always
+
+[ v3_req ]
+basicConstraints	= CA:FALSE
+subjectKeyIdentifier	= hash

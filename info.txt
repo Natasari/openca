@@ -1,0 +1,10 @@
+direktori CA 
+CA certificate
+database dari sertifikat
+key request dan sertifikat yang digenerate
+
+CA/newcerts
+kopian dari setiap sertifikat
+
+CA/private 
+CA private key
