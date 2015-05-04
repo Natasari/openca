@@ -63,7 +63,7 @@
 	<tr>
 		<td>Certificate Passphrase</td>
 		<td>
-			<input type="text" name="passphrase"/>
+			<input type="text" name="passphrase" value="peni"/>
 		</td>
 	</tr>
 	<tr>
