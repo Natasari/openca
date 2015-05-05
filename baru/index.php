@@ -12,6 +12,12 @@ $request=$_REQUEST['request'];
         case "dn_function":
         		require"ssl.php";
         break;
+        case "view":
+        		require"view.php";
+        break;
+        case "coba":
+        		require"coba.php";
+        break;
 	default:           
                 echo "halaman utama";
 
