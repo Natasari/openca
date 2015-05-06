@@ -44,21 +44,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         <div id="signup">   
           <h1>Sign Up for Free</h1>
 
-          <form action="#" method="post">
+          <form action="?request=sign_user" method="post">
 
           <div class="top-row">
             <div class="field-wrap">
               <label>
                 First Name<span class="req">*</span>
               </label>
-              <input type="text" required="" autocomplete="off">
+              <input type="text" required="" autocomplete="off" name="fname">
             </div>
 
             <div class="field-wrap">
               <label>
                 Last Name<span class="req">*</span>
               </label>
-              <input type="text" required="" autocomplete="off">
+              <input type="text" required="" autocomplete="off" name="lname">
             </div>
           </div>
 
@@ -66,14 +66,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             <label>
               Email Address<span class="req">*</span>
             </label>
-            <input type="email" required="" autocomplete="off">
+            <input type="email" required="" autocomplete="off" name="username">
           </div>
 
           <div class="field-wrap">
             <label>
               Set A Password<span class="req">*</span>
             </label>
-            <input type="password" required="" autocomplete="off">
+            <input type="password" required="" autocomplete="off" name="password">
           </div>
 
           <button type="submit" class="button button-block">Get Started</button>

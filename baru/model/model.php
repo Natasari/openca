@@ -8,7 +8,16 @@ class certificate{
 		$rec=mysql_fetch_assoc($query);
 		return $rec;
 	}
-	
+
+	function do_signup(){
+		$username=$_POST['username'];
+		$password=$_POST['password'];
+		$fname=$_POST['fname'];
+		$lname=$_POST['lname'];
+		$sql="INSERT INTO user (username, password, fname, lname) VALUES('" .$username . "','" . $password . "','" . $fname . "','". $lname."')";
+		print_r($sql);
+		return mysql_query($sql);
+	}
 }
 $ser = new certificate();
 ?>

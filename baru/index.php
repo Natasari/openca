@@ -2,9 +2,6 @@
 require"config/koneksi.php";
 require"model/model.php";
 
-$con = mysql_connect('localhost','root','peni');
-
-
 $request=$_REQUEST['request'];
 
 switch($request){
@@ -26,6 +23,11 @@ switch($request){
                 }else{
                         echo "tidak ada";
                 }
+                //require"view/dashboard.php";
+
+        break;
+        case "sign_user":
+                $ada=$ser->do_signup();
                 //require"view/dashboard.php";
 
         break;
