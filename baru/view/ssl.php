@@ -7,6 +7,13 @@ print "<h2>Creating Certificate Key</h2>";
 print "PASSWORD:".$my_passphrase."<BR>";
 print "KEY BIT:".$my_keyBit."<BR>";
 
+
+$sql="INSERT INTO dn (id_user, commonName, email, orgunit, orgname, city, state, country, keysize, days) 
+      VALUES('" .$_SESSION['id_user'] . "','" . $arr['commonName'] . "','" . $arr['emailAddress'] . "','". $arr['organizationalUnitName']."','". 
+        $arr['organizationName']."','". $arr['localityName']."','". $arr['stateOrProvinceName']."','". $arr['countryName']."','". $arr['keySize']."','". $arr['days']. "')";
+mysql_query($sql);
+
+
 $config = array(
     "digest_alg" => "sha1",
     "private_key_bits" => (int) $my_keyBit,

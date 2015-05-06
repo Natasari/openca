@@ -27,22 +27,13 @@
 		</td>
 	</tr>
 	<tr>
-		<td>Organization Name</td>
-		<td>
-			<input type="text" name="cert_dn[organizationName]" value="ABC Widgets" size="25">
-		</td>
+		
 	</tr>
 	<tr>
-		<td>City</td>
-		<td>
-			<input type="text" name="cert_dn[localityName]" value="Beverly Hills" size="25">
-		</td>
+		
 	</tr>
 	<tr>
-		<td>State</td>
-		<td>
-			<input type="text" name="cert_dn[stateOrProvinceName]" value="California" size="25">
-		</td>
+		
 	</tr>
 	<tr>
 		<td>Country</td>
@@ -77,63 +68,73 @@
       -->
      <section id="main-content">
            <section class="wrapper">
-
-            <h3><i class="fa fa-angle-right"></i> Basic Table Examples</h3>
-              
               <!-- BASIC FORM ELELEMNTS -->
           	<div class="row mt">
           		<div class="col-lg-12">
                   <div class="form-panel">
-                  	  <h4 class="mb"><i class="fa fa-angle-right"></i> New C</h4>
+                  	  <h4 class="mb"><i class="fa fa-angle-right"></i> Create a new Certificate Request</h4>
                       
                       <form action="?request=dn_function" class="form-horizontal style-form" method="post">
                           <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Default</label>
+                              <label class="col-sm-2 col-sm-2 control-label">Common Name (eg root-ca.golf.local)</label>
                               <div class="col-sm-10">
-                                  <input type="text" class="form-control">
+                                  <input class="form-control" type="text" name="cert_dn[commonName]" value="ABC Widgets Certificate Autdority" size="40">
+                              </div>
+                          </div>
+                           <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Contact Email Address</label>
+                              <div class="col-sm-10">
+                                  <input class="form-control" type="text" name="cert_dn[emailAddress]" value="cert@abcwidgets.com" size="30">
+                              </div>
+                          </div>
+                           <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Organizational Unit Name</label>
+                              <div class="col-sm-10">
+                                  <input class="form-control" type="text" name="cert_dn[organizationalUnitName]" value="Certification" size="30">
+                              </div>
+                          </div>
+                           <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Organization Name</label>
+                              <div class="col-sm-10">
+                                  <input class="form-control" type="text" name="cert_dn[organizationName]" value="ABC Widgets" size="25">
+                              </div>
+                          </div>
+                           <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">City</label>
+                              <div class="col-sm-10">
+                                  <input class="form-control" type="text" name="cert_dn[localityName]" value="Beverly Hills" size="25">
                               </div>
                           </div>
                           <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Help text</label>
+                              <label class="col-sm-2 col-sm-2 control-label">State</label>
                               <div class="col-sm-10">
-                                  <input type="text" class="form-control">
-                                  <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                                  <input class="form-control" type="text" name="cert_dn[stateOrProvinceName]" value="California" size="25">
                               </div>
                           </div>
                           <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Rounder</label>
+                              <label class="col-sm-2 col-sm-2 control-label">Country</label>
                               <div class="col-sm-10">
-                                  <input type="text" class="form-control round-form">
+                                  <input class="form-control" type="text" name="cert_dn[countryName]" value="US" size="2">
                               </div>
                           </div>
                           <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Input focus</label>
+                              <label class="col-sm-2 col-sm-2 control-label">Key Size</label>
                               <div class="col-sm-10">
-                                  <input class="form-control" id="focusedInput" type="text" value="This is focused...">
+                                  <input type="radio" name="cert_dn[keySize]" value="1024" checked /> 1024bits 
+                                  <input type="radio" name="cert_dn[keySize]" value="2048" /> 2048bits
+                                  <input type="radio" name="cert_dn[keySize]" value="4096" /> 4096bits
                               </div>
                           </div>
                           <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Disabled</label>
+                              <label class="col-sm-2 col-sm-2 control-label">Number of Days</label>
                               <div class="col-sm-10">
-                                  <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+                                  <input class="form-control" type="text" name="cert_dn[days]" size="4" value="356" />
                               </div>
                           </div>
                           <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Placeholder</label>
+                              <label class="col-sm-2 col-sm-2 control-label">Certificate Passphrase</label>
                               <div class="col-sm-10">
-                                  <input type="text"  class="form-control" placeholder="placeholder">
-                              </div>
-                          </div>
-                          <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Password</label>
-                              <div class="col-sm-10">
-                                  <input type="password"  class="form-control" placeholder="">
-                              </div>
-                          </div>
-                          <div class="form-group">
-                              <label class="col-lg-2 col-sm-2 control-label">Static control</label>
-                              <div class="col-lg-10">
-                                  <p class="form-control-static">email@example.com</p>
+                                  <input class="form-control" type="text" name="passphrase" value="peni"/>
                               </div>
                           </div>
                           <div class="form-group">

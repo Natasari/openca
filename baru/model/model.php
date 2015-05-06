@@ -15,7 +15,6 @@ class certificate{
 		$fname=$_POST['fname'];
 		$lname=$_POST['lname'];
 		$sql="INSERT INTO user (username, password, fname, lname) VALUES('" .$username . "','" . $password . "','" . $fname . "','". $lname."')";
-		print_r($sql);
 		return mysql_query($sql);
 	}
 }

@@ -4,10 +4,10 @@
               <ul class="sidebar-menu" id="nav-accordion">
               
               	  <p class="centered"><a href="profile.php"><img src="asset/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
-              	  <h5 class="centered"><?php echo $ada['username']?></h5>
+              	  <h5 class="centered"><?php echo $_SESSION['username']?></h5>
               	  	
                   <li class="mt">
-                      <a class="active" href="index.php">
+                      <a class="active" href="?request=dashboard">
                           <i class="fa fa-dashboard"></i>
                           <span>Dashboard</span>
                       </a>
