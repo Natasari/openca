@@ -1,26 +1,34 @@
-
 <?php
+require"config/koneksi.php";
+require"model/model.php";
 
-error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
+$con = mysql_connect('localhost','root','peni');
+
 
 $request=$_REQUEST['request'];
 
-	switch($request){
+switch($request){
         case "dn":
-                require"dn.php";
+                require"view/dn.php";
         break;
         case "dn_function":
-        		require"ssl.php";
+        	require"view/ssl.php";
         break;
-        case "view":
-        		require"view.php";
+        case "login":
+        	require"view/login.php";
         break;
-        case "coba":
-        		require"coba.php";
+        case "login_user":
+                $ada=$ser->show();
+                
+                if($ada != null){
+                        print_r($ada);
+                }
+                else{
+                        echo "data tidak ada";
+                }
         break;
 	default:           
                 echo "halaman utama";
-
         break;
 	}
 ?>
