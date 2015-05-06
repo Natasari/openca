@@ -19,13 +19,15 @@ switch($request){
         break;
         case "login_user":
                 $ada=$ser->show();
-                
                 if($ada != null){
-                        print_r($ada);
+                        $nama = $ada['username'];
+                        require("view/header.php");
+                        require("view/dashboard.php");
+                }else{
+                        echo "tidak ada";
                 }
-                else{
-                        echo "data tidak ada";
-                }
+                //require"view/dashboard.php";
+
         break;
 	default:           
                 echo "halaman utama";
