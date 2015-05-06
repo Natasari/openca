@@ -4,101 +4,112 @@
       MAIN SIDEBAR MENU
       *********************************************************************************************************************************************************** -->
       <!--sidebar start-->
-      <aside>
-          <div id="sidebar"  class="nav-collapse ">
-              <!-- sidebar menu start-->
-              <ul class="sidebar-menu" id="nav-accordion">
-              
-              	  <p class="centered"><a href="profile.html"><img src="asset/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
-              	  <h5 class="centered"><?php echo $ada['username']?></h5>
-              	  	
-                  <li class="mt">
-                      <a class="active" href="index.html">
-                          <i class="fa fa-dashboard"></i>
-                          <span>Dashboard</span>
-                      </a>
-                  </li>
-
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-desktop"></i>
-                          <span>UI Elements</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="general.html">General</a></li>
-                          <li><a  href="buttons.html">Buttons</a></li>
-                          <li><a  href="panels.html">Panels</a></li>
-                      </ul>
-                  </li>
-
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-cogs"></i>
-                          <span>Components</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="calendar.html">Calendar</a></li>
-                          <li><a  href="gallery.html">Gallery</a></li>
-                          <li><a  href="todo_list.html">Todo List</a></li>
-                      </ul>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-book"></i>
-                          <span>Extra Pages</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="blank.html">Blank Page</a></li>
-                          <li><a  href="login.html">Login</a></li>
-                          <li><a  href="lock_screen.html">Lock Screen</a></li>
-                      </ul>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-tasks"></i>
-                          <span>Forms</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="form_component.html">Form Components</a></li>
-                      </ul>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-th"></i>
-                          <span>Data Tables</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="basic_table.html">Basic Table</a></li>
-                          <li><a  href="responsive_table.html">Responsive Table</a></li>
-                      </ul>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class=" fa fa-bar-chart-o"></i>
-                          <span>Charts</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="morris.html">Morris</a></li>
-                          <li><a  href="chartjs.html">Chartjs</a></li>
-                      </ul>
-                  </li>
-
-              </ul>
-              <!-- sidebar menu end-->
-          </div>
-      </aside>
+      
       <!--sidebar end-->
       
-      <!-- **********************************************************************************************************************************************************
+      <!--**********************************************************************************************************************************************************
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
-      <!--main content start-->
-      
-      
-      <!--main content end-->
-      
-  </section>
+     <section id="main-content">
+           <section class="wrapper">
 
+            <h3><i class="fa fa-angle-right"></i> Basic Table Examples</h3>
+              <form action="?request=dn" method="post">
+                <button type="submit" class="btn btn-default btn-lg">New Certificate</button>
+              </form>
+
+              <div class="row mt">
+                  <div class="col-md-12">
+                      <div class="content-panel">
+                          <table class="table table-striped table-advance table-hover">
+                            <h4><i class="fa fa-angle-right"></i> Advanced Table</h4>
+                            <hr>
+                              <thead>
+                              <tr>
+                                  <th><i class="fa fa-bullhorn"></i> Company</th>
+                                  <th class="hidden-phone"><i class="fa fa-question-circle"></i> Descrition</th>
+                                  <th><i class="fa fa-bookmark"></i> Profit</th>
+                                  <th><i class=" fa fa-edit"></i> Status</th>
+                                  <th></th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              <tr>
+                                  <td><a href="basic_table.html#">Company Ltd</a></td>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                  <td>12000.00$ </td>
+                                  <td><span class="label label-info label-mini">Due</span></td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <a href="basic_table.html#">
+                                          Dashgum co
+                                      </a>
+                                  </td>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                  <td>17900.00$ </td>
+                                  <td><span class="label label-warning label-mini">Due</span></td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <a href="basic_table.html#">
+                                          Another Co
+                                      </a>
+                                  </td>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                  <td>14400.00$ </td>
+                                  <td><span class="label label-success label-mini">Paid</span></td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <a href="basic_table.html#">
+                                          Dashgum ext
+                                      </a>
+                                  </td>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                  <td>22000.50$ </td>
+                                  <td><span class="label label-success label-mini">Paid</span></td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td><a href="basic_table.html#">Total Ltd</a></td>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                  <td>12120.00$ </td>
+                                  <td><span class="label label-warning label-mini">Due</span></td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div><!-- /content-panel -->
+                  </div><!-- /col-md-12 -->
+              </div><!-- /row -->
+
+    </section><! --/wrapper -->
+      </section>
+    
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="asset/js/jquery.js"></script>
     <script src="asset/js/jquery-1.8.3.min.js"></script>
