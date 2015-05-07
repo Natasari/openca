@@ -17,6 +17,15 @@ class certificate{
 		$sql="INSERT INTO user (username, password, fname, lname) VALUES('" .$username . "','" . $password . "','" . $fname . "','". $lname."')";
 		return mysql_query($sql);
 	}
+
+	function list_cert(){
+		$sql="SELECT * FROM dn WHERE id_user =".$_SESSION['id_user'];
+		$query=mysql_query($sql);
+		while($rec=mysql_fetch_assoc($query)){
+			$record[] = $rec;
+		}
+		return $record;
+	}
 }
 $ser = new certificate();
 ?>

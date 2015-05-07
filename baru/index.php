@@ -23,9 +23,7 @@ switch($request){
                 if($ada != null){
                         $_SESSION['username'] = $ada['username'];
                         $_SESSION['id_user'] = $ada['id_user'];
-                        require("view/header.php");
-                        require("view/aside.php");
-                        require("view/dashboard.php");
+                        header('Location:?request=dashboard');
                 }else{
                         echo "tidak ada";
                 }
@@ -38,9 +36,14 @@ switch($request){
 
         break;
         case "dashboard":
+                $list=$ser->list_cert();
                 require("view/header.php");
                 require("view/aside.php");
                 require("view/dashboard.php");
+        break;
+        case "download":
+                $param=$_REQUEST['id'];
+                require("view/download.php");
         break;
 	default:           
                 echo "halaman utama";
